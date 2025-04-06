@@ -1,0 +1,44 @@
+Pares no Intervalo<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares no intervalo</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    Qual tabuada você quer?<select name="" id="selectTabuada">
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+    </select> <br>
+
+    Até que valor? <input id="inputNumero" type="number"> <br>
+    <button onclick="calcular()">Calcular Tabuada</button> <br> <br>
+    <div id="divMensagem"></div>
+</body>
+</html>
+
+<script>
+function calcular(){
+    contador = 1    
+    tabuada = selectTabuada.value
+    numero = inputNumero.value
+
+        while(contador <= numero){
+            if(contador % 2 == 0){
+            divMensagem.innerHTML += `<span style="color: blue;"> ${tabuada} x ${contador} = ${tabuada * contador} <br>`
+            }
+            else{
+            divMensagem.innerHTML += `<span style="color: red;"> ${tabuada} x ${contador} = ${tabuada * contador}<br>`
+            }
+            contador++
+        }
+        }
+
+</script>

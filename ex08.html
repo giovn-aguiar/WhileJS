@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papagaio falante</title>
+</head>
+<body>
+    <h1>Papagaio falante</h1>
+    Digite uma frase <input id="inputFrase" type="text">
+    Digite um número <input id="inputNumero" type="number">
+    <button onclick="calcular()">Exibir frases</button>
+    <div id="divMensagem"></div>
+</body>
+</html>
+
+<script>
+
+function calcular(){
+    frase = inputFrase.value
+    numero = inputNumero.value
+    contadorPrimeiro = 0
+    contador = 0
+    mensagem = ""
+
+    while (contadorPrimeiro < numero){
+        mensagem += `${frase}`
+        contador++
+    }
+    while(contador <= numero){
+        alert(`${frase}`)
+    contador++
+    }
+}
+
+</script>

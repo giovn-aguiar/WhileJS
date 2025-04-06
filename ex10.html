@@ -1,0 +1,28 @@
+Pares no Intervalo<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pares no intervalo</title>
+</head>
+<body>
+    <h1>Pares no intervalo</h1>
+    Quantas voltas o carro dará <input id="inputNumero" type="text"> <br>
+    <button onclick="calcular()">Iniciar corrida</button> <br> <br>
+    <div id="divMensagem"></div>
+</body>
+</html>
+
+<script>
+
+function calcular(){
+    contador = 1
+    voltas = inputNumero.value
+
+        while(contador <= voltas){
+            divMensagem.innerHTML += `Carro dando a ${contador}º volta <br>`
+            contador++
+        }
+    }
+
+</script>

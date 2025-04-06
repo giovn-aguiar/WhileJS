@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplos de 5</title>
+</head>
+<body>
+    <h1>Múltiplos de 7</h1>
+    Digite um número <input id="inputNumero" type="text"> <br>
+    <button onclick="calcular()">Adoro múltiplos de 7</button> <br> <br>
+    <div id="divMensagem"></div>
+</body>
+</html>
+
+<script>
+
+function calcular(){
+    contador = 0
+    numero = inputNumero.value
+
+    if(numero < 0 || numero > 200){
+        alert('Número deve ser ser entre 0 e 200')
+    }
+
+    else{
+        while(contador <= numero){
+        resto = contador % 7
+
+        if(resto == 0){
+            divMensagem.innerHTML += `${contador} <br>`
+        }
+    contador++
+    }
+
+    }
+    
+}
+
+</script>
