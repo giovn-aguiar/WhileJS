@@ -17,7 +17,9 @@
 
 function calcular(){
     contador = 0
-    numero = inputNumero.value
+    numero = Number(inputNumero.value)
+    divMensagem.innerHTML = ``
+
 
     if(numero < 20 || numero > 100){
         alert('Número deve ser ser entre 20 e 100')

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase Numerada</title>
+</head>
+<body>
+    <h1>Frase Numerada</h1>
+    <button onclick="dizer()">Diga algo sobre a matéria de Algorítmos</button>
+    <div id="divMensagem"></div>
+</body>
+</html>
+
+<script>
+
+    function dizer(){
+        var i = 1;
+        divMensagem.innerHTML = ``
+
+        while(i < 8){
+            divMensagem.innerHTML += `<br><br><br> ${i}. Aula que às vezes me faz perceber o quanto minha lógica tá orientada a cebola (toda vez que olho da vontade de chorar), mas ainda sim salva todas as minhas segundas-feiras <3 `
+            i++
+        }
+    }
+</script>

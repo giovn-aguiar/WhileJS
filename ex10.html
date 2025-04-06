@@ -3,10 +3,10 @@ Pares no Intervalo<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pares no intervalo</title>
+    <title>Corrida de Voltas</title>
 </head>
 <body>
-    <h1>Pares no intervalo</h1>
+    <h1>Corrida de Voltas</h1>
     Quantas voltas o carro dará <input id="inputNumero" type="text"> <br>
     <button onclick="calcular()">Iniciar corrida</button> <br> <br>
     <div id="divMensagem"></div>
@@ -17,12 +17,15 @@ Pares no Intervalo<!DOCTYPE html>
 
 function calcular(){
     contador = 1
-    voltas = inputNumero.value
+    voltas = Number(inputNumero.value)
+    divMensagem.innerHTML = ``
 
         while(contador <= voltas){
             divMensagem.innerHTML += `Carro dando a ${contador}º volta <br>`
             contador++
         }
+
+        divMensagem.innerHTML += `Corrida finalizada!`
     }
 
 </script>

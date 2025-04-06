@@ -27,8 +27,10 @@ Pares no Intervalo<!DOCTYPE html>
 <script>
 function calcular(){
     contador = 1    
-    tabuada = selectTabuada.value
-    numero = inputNumero.value
+    tabuada = Number(selectTabuada.value)
+    numero = Number(inputNumero.value)
+
+    divMensagem.innerHTML = ``
 
         while(contador <= numero){
             if(contador % 2 == 0){

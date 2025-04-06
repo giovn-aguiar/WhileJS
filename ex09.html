@@ -6,9 +6,9 @@
     <title>Pares no Intervalo  </title>
 </head>
 <body>
-    <h1>Pares no Intervalo  </h1>
+    <h1>Pares no Intervalo </h1>
     Digite o primeiro número <input id="inputNumero" type="text"> <br>
-    Digite o segundo <input id="inputSegundoNumero" type="text"> <br>
+    Digite o segundo número <input id="inputSegundoNumero" type="text"> <br>
     <button onclick="calcular()">s2 pares</button> <br> <br>
     <div id="divMensagem"></div>
 </body>
@@ -18,15 +18,17 @@
 
 function calcular(){
     contador = 0
-    primeiro = inputNumero.value
-    segundo = inputSegundoNumero.value
+    primeiro = Number(inputNumero.value)
+    segundo = Number(inputSegundoNumero.value)
+    divMensagem.innerHTML = ``
 
-    if(inputNumero > inputSegundoNumero){
+    if(primeiro > segundo){
         alert('Primeiro número deve ser maior que o segundo')
     }
 
     else{
         contador = primeiro
+
         while(contador <= segundo){
         resto = contador % 2
 

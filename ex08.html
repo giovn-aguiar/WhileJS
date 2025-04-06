@@ -18,18 +18,20 @@
 
 function calcular(){
     frase = inputFrase.value
-    numero = inputNumero.value
-    contadorPrimeiro = 0
+    numero = Number(inputNumero.value)
     contador = 0
     mensagem = ""
 
-    while (contadorPrimeiro < numero){
-        mensagem += `${frase}`
+    while (contador < numero){
+        mensagem += ` ${frase}`
         contador++
     }
-    while(contador <= numero){
-        alert(`${frase}`)
-    contador++
+
+    contador = 1
+
+    while(contador < numero){
+        alert(`${mensagem}`)
+        contador++
     }
 }
 
